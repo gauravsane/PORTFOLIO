@@ -15,6 +15,7 @@
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -91,7 +92,7 @@
     <!--==================== MAIN ====================-->
     <div class="main">
         <!--==================== HOME ====================-->
-        <section class="home section" id="home">
+        <section class="home section" id="home" data-aos="zoom-down" data-aos-duration="3000">
             <div class="home__container container grid">
                 <div class="home__content grid">
                     <div class="home__social">
@@ -107,7 +108,7 @@
                         </a>
                     </div>
 
-                    <div class="home__img">
+                    <div class="home__img" data-aos="zoom-in" data-aos-duration="3000">
                         <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <mask id="mask0" mask-type="alpha">
@@ -149,12 +150,12 @@
         </section>
 
         <!--==================== ABOUT ====================-->
-        <section class="about section" id="about">
+        <section class="about section" id="about" data-aos="fade-up" data-aos-duration="2000">
             <h2 class="section__title">About Me</h2>
             <span class="section__subtitle">My Intro</span>
 
             <div class="about__container container grid">
-                <img src="/images/img.jpg" alt="" class="about__img">
+                <img src="/images/img.jpg" alt="" class="about__img" data-aos="zoom-in" data-aos-duration="3000">
 
                 <div class="about__data">
                     <p class="about__description">Web developer, with extensive knowledge and years of experience,
@@ -187,7 +188,7 @@
         </section>
 
         <!--==================== SKILLS ====================-->
-        <section class="skills section" id="skills">
+        <section class="skills section" id="skills" data-aos="fade-up" data-aos-duration="2000">
             <h2 class="section__title">Skills</h2>
             <span class="section__subtitle">My technical level</span>
 
@@ -289,7 +290,7 @@
         </section>
 
         <!--==================== QUALIFICATION ====================-->
-        <section class="qualification section">
+        <section class="qualification section" data-aos="fade-up" data-aos-duration="2000">
             <h2 class="section__title">Qualification</h2>
             <span class="section__subtitle">My Personal Journey</span>
 
@@ -411,7 +412,7 @@
         </section>
 
         <!--==================== SERVICES ====================-->
-        <section class="services section" id="services">
+        <section class="services section" id="services" data-aos="zoom-in" data-aos-duration="2500" data-aos-easing="ease-in">
             <h2 class="section__title">Services</h2>
             <span class="section__subtitle">What i offer</span>
 
@@ -538,7 +539,7 @@
     </section>
 
     <!--==================== PORTFOLIO ====================-->
-    <section class="portfolio section" id="portfolio">
+    <section class="portfolio section" id="portfolio" >
         <h2 class="section__title">Portfolio</h2>
         <span class="section__subtitle">Most recent work</span>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -588,7 +589,7 @@
     </section>
 
     <!--==================== CONTACT ME ====================-->
-    <section class="contact section" id="contact">
+    <section class="contact section" id="contact" data-aos="fade-in" data-aos-duration="2000" data-aos-easing="ease-in-out-cubic">
         <h2 class="section__title">Contact Me</h2>
         <span class="section__subtitle">Get in touch</span>
 
@@ -663,7 +664,7 @@
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-in" data-aos-duration="3000">
         <div class="footer__bg">
             <div class="footer__container container grid">
                 <div>
@@ -727,7 +728,15 @@
     <!--==================== INDEX JS ====================-->
     <script src="index.js"></script>
 
-
+    <!--==================== Animation Aos  ====================-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        delay: 2000
+        offset: 1200
+        duration: 3000
+        
+      </script>
 
 </body>
 

@@ -1086,11 +1086,16 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* .footer{
+   width: 100%;
+  } */
+
   .qualification__sections{
     display: grid;
     grid-template-columns: .6fr;
     justify-content: center;
   }
+
 }
 
 
